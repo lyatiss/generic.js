@@ -1,0 +1,25 @@
+{
+  "name": "generic.js",
+  "version": "0.0.1",
+  "description": "Generic classes to extend Backbone.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/grunt mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lyatiss/generic.js.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "3b2c797eea1edfa0f22f8cadf352657ba3ac81dc",
+  "devDependencies": {
+    "grunt-cli": "~0.1.8",
+    "grunt": "~0.4.1",
+    "grunt-mocha": "~0.3.1"
+  }
+}

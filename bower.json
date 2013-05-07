@@ -1,0 +1,10 @@
+{
+  "name": "generic.js",
+  "version": "0.0.0",
+  "devDependencies": {
+    "sinon": "~1.7.1",
+    "sinon-chai": "~2.4.0",
+    "mocha": "~1.9.0",
+    "jquery": "~2.0.0"
+  }
+}
