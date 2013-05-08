@@ -1,6 +1,6 @@
 {
-  "name": "generic.js",
-  "version": "0.0.0",
+  "name": "backbone.generic",
+  "version": "0.0.1",
   "devDependencies": {
     "sinon": "~1.7.1",
     "sinon-chai": "~2.4.0",
