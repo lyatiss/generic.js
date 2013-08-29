@@ -3,7 +3,9 @@ define("generic", [
 	"generic/CollectionView",
 	"generic/TableView"
 ], function (
-	View
+	View,
+	CollectionView,
+	TableView
 ) {
 	return {
 		View: View,
