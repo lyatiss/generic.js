@@ -1,5 +1,3 @@
-"use strict"
-
 /**
  * @class Generic.View
  * @extends Backbone.View
@@ -134,6 +132,9 @@ define([
 
 		onModelChange: function (model) {
 			var self = this;
+			if (!model) {
+				return console.error("Model should be passed as an argument with change event");
+			}
 			_(model.changed).each(function (value, property) {
 				self.$("[data-bind=" + property +"]").text(value);
 			});
@@ -150,6 +151,11 @@ define([
 			this.destroyed = true;
 			if (this.model) {
 				this.model.off("close", this);
+				this.model.off(null, null, this);
+			}
+			if (this.collection) {
+				this.collection.off("close", this);
+				this.collection.off(null, null, this);
 			}
 			if (this.children) {
 				_(this.children).each(function (view) {
@@ -178,7 +184,7 @@ define([
 			}
 			this.children.push(childView);
 			this.childrenMap[childId] = this.children.length - 1;
-			childView.on("destroy", self.onChildViewDestroyed, self);
+			childView.on("destroy", this.onChildViewDestroyed, this);
 			this.trigger("add", childView);
 			return childView;
 		},
