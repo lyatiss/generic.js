@@ -1,9 +1,13 @@
 define("generic", [
-	"generic/View"
+	"generic/View",
+	"generic/CollectionView",
+	"generic/TableView"
 ], function (
 	View
 ) {
 	return {
-		View: View
+		View: View,
+		CollectionView: CollectionView
+		TableView: TableView
 	};
 });
