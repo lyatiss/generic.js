@@ -7,7 +7,7 @@ define("generic", [
 ) {
 	return {
 		View: View,
-		CollectionView: CollectionView
+		CollectionView: CollectionView,
 		TableView: TableView
 	};
 });
